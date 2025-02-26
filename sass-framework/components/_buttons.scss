@@ -1,0 +1,41 @@
+
+
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+
+
+.btn {
+    @include common-style-btn($primary);
+   
+}
+
+.btn-outline {
+    @include common-style-btn( rgba($primary, 0.1)  , $primary);
+   
+}
+
+.btn-primary {
+    @include common-style-btn($primary);
+   
+}
+
+.btn-success {
+    @include common-style-btn($success);
+   
+}
+
+.btn-danger {
+    @include common-style-btn($danger);
+   
+}
+
+.btn-warning {
+    @include common-style-btn($warning);
+   
+}
+
+a{
+    text-decoration: none;
+}

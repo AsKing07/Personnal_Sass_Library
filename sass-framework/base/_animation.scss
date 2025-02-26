@@ -1,0 +1,134 @@
+// // Animation Fade In
+// .fade-in {
+//     opacity: 0;
+//     transform: translateY(20px);
+//     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+// }
+
+// .fade-in.visible {
+//     opacity: 1;
+//     transform: translateY(0);
+// }
+
+// // Animation Fade Out
+// .fade-out {
+//     animation: fadeOut 0.5s forwards;
+// }
+
+// @keyframes fadeOut {
+//     from {
+//         opacity: 1;
+//     }
+//     to {
+//         opacity: 0;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+// Animation Fade In
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// Animation Fade Out
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+// Animation Slide In
+.slide-in {
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+// Animation Slide Out
+.slide-out {
+    animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+//Animation Slide Up
+.slide-up {
+    animation: slideUp 0.5s forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+// Animation Scale Up
+.scale-up {
+    animation: scaleUp 0.5s forwards;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+// Animation Scale Down
+.scale-down {
+    animation: scaleDown 0.5s forwards;
+}
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.8);
+    }
+}

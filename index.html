@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass-framework/main.css">
+    <title>Test SASS</title>
+    <style>
+        .section
+        {
+            justify-content: center;
+            align-items: center;
+
+            /* Ligne de séparatiion en bas */
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2 style="text-align: center;" >GRILLE</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4 bordered ">
+                    <p>Une colonne avec une bordure</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <p>Une colonne sans bordure</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 bordered flex">
+                    <p>Une colonne avec le texte centré</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 bordered radius flex">
+                    <p>Une colonne avec la bordure arrondie</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="section">
+        <h2 style="text-align: center;" >BOUTONS</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12  flex">
+                <button class="btn-primary">Bouton PRIMARY</button>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 flex">
+                <button class="btn-outline">Bouton transparent</button>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4  flex">
+                <button class="btn-success">Bouton SUCCESS</button>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 flex">
+                <button class="btn-danger">Bouton DANGER</button>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4  flex">
+                <button class="btn-warning">Bouton ALERT</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2 style="text-align: center;" >CARDS</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 flex">
+                <div class="card card-secondary">
+                    <img src="a.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Titre de la carte</h5>
+                        <p class="card-text">Texte de la carte</p>
+                        <a href="#" class="btn-primary">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 flex">
+                <div class="card card-primary">
+                    <img src="a.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Titre de la carte</h5>
+                        <p class="card-text">Texte de la carte</p>
+                        <a href="#" class="btn-success">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2 style="text-align: center;" >MODAL</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-12 flex">
+                <button id="openModal" type="button" class="btn btn-primary">
+                   Cliquez pour ouvrir le modal
+                </button>
+        </div>
+            <!-- Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Titre du modal</h2>
+            <p>Contenu du modal ici...</p>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="section">
+        <h2 style="text-align: center;" >ALERTS</h2>
+    <div class="row">
+         <div class="col-sm-12 col-md-6 col-lg-12 flex">
+            <button class="btn-success" onclick="showAlert('success')">Afficher Succès</button>                
+        </div>
+         <div class="col-sm-12 col-md-6 col-lg-12 flex">
+            <button class="btn-danger" onclick="showAlert('error')">Afficher Erreur</button>
+                
+        </div>
+         <div class="col-sm-12 col-md-6 col-lg-12 flex">
+            <button class="btn-warning" onclick="showAlert('warning')">Afficher Avertissement</button>
+                
+        </div>
+         
+
+    </div>
+    <div class="alert alert-success" id="alert-success">Succès! Votre action a été réalisée avec succès.</div>
+    <div class="alert alert-error" id="alert-error">Erreur! Quelque chose s'est mal passé.</div>
+    <div class="alert alert-warning" id="alert-warning">Attention! Vérifiez les informations fournies.</div>
+    </div>
+
+    <div class="section">
+        <h2 style="text-align: center;" >DIV BREAKPOINT</h2>
+        <p style="text-align: center;">Cette div change fond de couleur basée sur le point d'arrêt</p>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-12 element"></div>
+        </div>
+
+
+    </div>
+    <div class="section">
+        <h2 style="text-align: center;" >Padding & Margin</h2>
+        <p style="text-align: center;">Utilisation des padding(p) et margin(m)</p>
+        <p style="text-align: center;">1 = 4px  </p>
+        <p style="text-align: center;"><ul style="list-style-type: none; display: flex; flex-wrap: wrap; justify-content: center;">
+            <li style="margin-right: 10px;">m: margin</li>
+            <li style="margin-right: 10px;">p: padding</li>
+            <li style="margin-right: 10px;">mt: margin-top</li>
+            <li style="margin-right: 10px;">mr: margin-right</li>
+            <li style="margin-right: 10px;">mb: margin-bottom</li>
+            <li style="margin-right: 10px;">ml: margin-left</li>
+            <li style="margin-right: 10px;">pt: padding-top</li>
+            <li style="margin-right: 10px;">pr: padding-right</li>
+            <li style="margin-right: 10px;">pb: padding-bottom</li>
+            <li>pl: padding-left</li>
+        </ul></p>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 bordered m-1 p-1">Marge 1, Padding 1 : class="p-1 m-1"</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 bordered m-2 p-2">Marge 2, Padding 2 : class="p-2 m-2"</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 bordered m-3 p-3">Marge 3, Padding 3 : class="p-3 m-3"</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 bordered mt-1 mr-2 mb-3 ml-4 pt-1 pr-2 pb-3 pl-4">Marge et Padding 1, 2, 3 : class="mt-1 mr-2 mb-3 ml-4 pt-1 pr-2 pb-3 pl-4"</div>
+        </div>
+
+
+    </div>
+
+    <div class="section" >
+        <h2 style="text-align: center;" >Changer le thème</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-12 flex">
+                <button id="themeToggle" class="btn">Changer de Thème</button>
+            </div>
+        </div>
+       
+    </div>
+
+    <script>
+        // JavaScript pour ouvrir et fermer le modal
+        const modal = document.getElementById('myModal');
+        const openModalBtn = document.getElementById('openModal');
+        const closeModalBtn = document.getElementById('closeModal');
+
+        openModalBtn.onclick = function() {
+            modal.classList.add('active');
+        }
+
+        closeModalBtn.onclick = function() {
+            modal.classList.remove('active');
+        }
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.classList.remove('active');
+            }
+        }
+ // JavaScript pour montrer les alerts
+        function showAlert(type) {
+            const alert = document.getElementById(`alert-${type}`);
+            alert.style.display = 'block';
+            alert.style.animation = 'fadeIn 0.5s forwards, fadeOut 0.5s forwards 4s';
+
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 4500); // Cache l'alerte après 4.5 secondes
+        }
+
+
+ // JavaScript pour changer de thème
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const body = document.body;
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                themeToggleBtn.textContent = 'Changer en mode clair';
+                themeToggleBtn.removeAttribute('data-theme');
+
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeToggleBtn.textContent = 'Changer en mode sombre';
+                themeToggleBtn.setAttribute('data-theme', 'dark');
+            }
+        });
+
+        // Animation Fade In quand visible
+        const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            entry.target.classList.add('slide-up');
+        }
+        else {
+            // entry.target.classList.remove('fade-in');
+            // entry.target.classList.remove('slide-up');
+        }
+    });
+}, {
+    threshold: 0.1 // Déclenche l'animation lorsque 10% de la div est visible
+});
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+    </script>
+</body>
+</html>
